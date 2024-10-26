@@ -1,4 +1,6 @@
-import './index.css'
+
+import 'bootstrap/dist/css/bootstrap.min.css';
+import './index.css';
 import { useState } from "react";
 import { Container } from "react-bootstrap";
 import Col from 'react-bootstrap/Col';
@@ -53,31 +55,30 @@ const userDelete = (indexToDelet)=>{
          <Col className="col1">
             <form action="" className="form" onSubmit={submit} >
 
-         <label className="label" >Name
-         <input className="input" type="text" value={userData.name} name="name" onChange={handleChang}/>
-                       </label> <br />
+         <label className="label" for='name' >Name  </label>
+         <input className="input" id='name' type="text" value={userData.name} name="name" onChange={handleChang}/>
+                        <br />
 
-          <label className="label" >Number
-                   <input className="input" type="number" name="number" value={userData.number} onChange={handleChang}/>
-                       </label> <br />
-         <label className="label" >age
-                   <input className="input" type="number" name="age" value={userData.age} onChange={handleChang}/>
-                       </label>  <br />
-       <label className="label" >Email
-                   <input className="input" type="email" name="email" value={userData.email} onChange={handleChang} />
-                    </label> <br />
-         <label  className="label">password
-                   <input className="input" type="password" name="password" value={userData.password} onChange={handleChang} />
-                       </label> <br />
+          <label className="label" for='number' >Number</label>
+                   <input className="input"  id='number' type="number" name="number" value={userData.number} onChange={handleChang}/>
+                        <br />
+         <label className="label"  for='age'>age</label>
+                   <input className="input" id='age' type="number" name="age" value={userData.age} onChange={handleChang}/>
+                         <br />
+       <label className="label" for='email' >Email</label>
+                   <input className="input" id='email' type="email" name="email" value={userData.email} onChange={handleChang} />
+                     <br />
+         <label  className="label" for='pass'>password</label>
+                   <input className="input" id='pass' type="password" name="password" value={userData.password} onChange={handleChang} />
+                        <br />
                       
                         <button type="submit" className="mt-4" >Submit</button>
-        </form>
+        </form> </Col></Row>
 
-
-
-
-        </Col></Row>
-         <Row>
+        
+        
+        
+ <Row>
 <Col className="col2 mt-3">
 <Table>
 <thead>
